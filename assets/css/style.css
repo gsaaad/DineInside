@@ -18,7 +18,7 @@ body {
   display: grid;
   margin: 0;
   padding: 0;
-  background-color: lightskyblue;
+  background-color: rgb(22, 0, 0);
 }
 
 .main-page {
@@ -56,9 +56,8 @@ body {
 
 .InLogo {
   float: left;
-  left: 16%;
-  width: 10em;
-  height: 5em;
+  width: 15em;
+  height: 6em;
   border-radius: 30px;
 }
 
