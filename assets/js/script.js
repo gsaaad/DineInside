@@ -26,22 +26,8 @@ var navBarWrapperEl = document.getElementById("NavBarWrapper");
 var searchSubmitBtn = document.getElementById("searchSubmit");
 var modalBox = document.getElementById("modalBox");
 var submitAgeCheckBtn = document.getElementById("submitAgeCheck");
-
-// var drinkingAgeRegulation = function () {
-//   window.alert(
-//     "Hello! Welcome to DineIn! You must be of drinking age to enter! "
-//   );
-//   var date = window.prompt("Please enter you age!");
-// console.log(date);
-// localStorage.setItem("userAge", JSON.stringify(date));
-// console.log(localStorage.getItem("userAge"));
-// console.log(JSON.parse(localStorage.getItem("userAge")));
-// if (JSON.parse(localStorage.getItem("userAge")) < 21) {
-//   mainPageEl.setAttribute("style", "display:none;");
-//   youngAgeEl.setAttribute("style", "display:block;");
-//   drinksList.setAttribute("style", "display:none;");
-//   document.getElementById("searchBar").setAttribute("style", "display:none;");
-// } else {
+navBarWrapperEl.setAttribute("style", "display:block");
+mainPageEl.setAttribute("style", "display:block;");
 
 var getCockTails = function () {
   const cockTails = {
@@ -739,7 +725,3 @@ submitAgeCheckBtn.addEventListener("click", function (event) {
       .setAttribute("style", "display:block");
   }
 });
-
-// }
-// };
-// drinkingAgeRegulation();
