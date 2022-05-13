@@ -28,6 +28,14 @@ var modalBox = document.getElementById("modalBox");
 var submitAgeCheckBtn = document.getElementById("submitAgeCheck");
 navBarWrapperEl.setAttribute("style", "display:block");
 mainPageEl.setAttribute("style", "display:block;");
+randomDrinkIngredientsEl.className =
+  "information-drinks mx-auto p-2 rounded-lg text-black";
+drinkInstructionsEl.className =
+  "information-drinks mx-auto p-2 rounded-lg text-black";
+randomMealIngredientsEl.className =
+  "information-drinks mx-auto p-2 rounded-lg text-black";
+mealInstructionsEl.className =
+  "information-drinks mx-auto p-2 rounded-lg text-black";
 
 var getCockTails = function () {
   const cockTails = {
