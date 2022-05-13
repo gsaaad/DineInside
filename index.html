@@ -17,14 +17,27 @@
 <header>
     <!-- content Wrapper -->
     <div>
-        <!-- <div id="modalBox" class="modal">
+        <div id="modalBox" class="modal">
             <div id="modalContent" class="flex flex-col items-center text-white ">
                 <h1 style="font-size: 60px;">Hello! Welcome to DineIn! You must be of drinking age to enter!</h1>
                 <p>Happy to let you in, Just let us know if you are 21 or older!</p>
                 <input  type="date" style="width:10%; color:black">
                 <button id="submitAgeCheck">Enter</button>
             </div>
-        </div> -->
+        </div>
+        <footer id="footerSectionModal" class="bg-rose-300 absolute bottom-0 w-full" >
+            <div class="row p-2 text-center text-3xl">
+                <div class="col-12 ">
+                    <p class="mb-0">
+                        <span >Made by the Eight is Enough code team</span>
+        
+                        </p>
+                    </br>
+                    &copy; 2022 DineInside, Inc.
+                </div>
+                
+            </div>
+        </footer>
         <!-- navbar Wrapper -->
         <div class="bg-red-400" style="display:none;"  id="NavBarWrapper">
             <!-- navbar -->
@@ -85,8 +98,8 @@
         </div>
 </header>
 <body >
-    <div id = "main-page" class="main-page h-full border-8 border-rose-400">
-            <div class="flex justify-around "> 
+    <div id = "main-page" class="main-page h-full border-8 border-rose-400" style="display:none;">
+            <div class="flex justify-around my-16"> 
                 <!--3 containers for drink and food, and promotion in middle!-->
 
                 <div class="left">
@@ -189,7 +202,7 @@
     <script src="./assets/js/script.js"></script>
 </body>
 
-<footer id="footerSection" class="bg-rose-300" >
+<footer id="footerSection" class="bg-rose-300 "  style="display: none;">
     <div class="row p-2 text-center text-3xl">
         <div class="col-12 ">
             <p class="mb-0">

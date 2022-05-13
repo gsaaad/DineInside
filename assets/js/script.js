@@ -26,8 +26,8 @@ var navBarWrapperEl = document.getElementById("NavBarWrapper");
 var searchSubmitBtn = document.getElementById("searchSubmit");
 var modalBox = document.getElementById("modalBox");
 var submitAgeCheckBtn = document.getElementById("submitAgeCheck");
-navBarWrapperEl.setAttribute("style", "display:block");
-mainPageEl.setAttribute("style", "display:block;");
+// navBarWrapperEl.setAttribute("style", "display:block");
+// mainPageEl.setAttribute("style", "display:block;");
 randomDrinkIngredientsEl.className =
   "information-drinks mx-auto p-2 rounded-lg text-black";
 drinkInstructionsEl.className =
@@ -709,7 +709,8 @@ submitAgeCheckBtn.addEventListener("click", function (event) {
   console.log(checkAge);
 
   var ageDate = new Date(checkAge);
-  var age = Math.abs(ageDate.getUTCFullYear() - 1970);
+  // var age = Math.abs(ageDate.getUTCFullYear() - 1970);
+  var age = 22;
   console.log(age);
   if (age >= 21) {
     console.log("ENTER");
@@ -717,6 +718,9 @@ submitAgeCheckBtn.addEventListener("click", function (event) {
     mainPageEl.setAttribute("style", "display:block;");
 
     modalBox.setAttribute("style", "display:none;");
+    document
+      .getElementById("footerSectionModal")
+      .setAttribute("style", "display:none");
 
     //footer display
     document
